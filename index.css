@@ -1,0 +1,291 @@
+@media (max-width:1023px) {
+  .button-container,.check-box-container,.tips-rules-for-nqueen,.check-box-container-answer1,.check-box-container-answer2 {
+    display:none
+  }
+  .small-device {
+    background-color:#3d2329;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    padding:20px;
+  }
+  #smallDevicePara {
+    color:white;
+    font-weight: bold;
+    font-family:"Roboto";
+  }
+}
+@media (min-width:1024px) {
+#smallDevicePara {
+  display:none;
+}
+body {
+    background-color:#3d2329;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding:20px;
+}
+.button-container {
+    padding:23px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+    background-color: #7a7174;
+    width:80vw;
+}
+.button-container button {
+    width:150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    color:black;
+    border-width:0px;
+    margin:10px;
+}
+#selectGrid {
+    width:150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    color:black;
+    border-width:0px;
+    margin:10px;
+}
+.check-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:80vw;
+    border-style: solid;
+    border-color:white;
+    border-width:3px;
+    padding:20px;
+    margin:20px;
+    /* width:20px;
+    height:20px; */
+}
+.check-box-container-answer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:80vw;
+    border-style: solid;
+    border-color:white;
+    border-width:3px;
+    padding:20px;
+    margin:20px;
+    display:none;
+}
+.check-box-container-answer2 {
+    align-items: center;
+    justify-content: center;
+    width:80vw;
+    border-style: solid;
+    border-color:white;
+    padding:20px;
+    border-width:3px;
+    display:none;
+    text-align: center;
+}
+.cell-with-black {
+    color:black;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size:23px;
+}
+.cell-with-white {
+    color:white;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size:23px;
+}
+
+
+/* css for tips and rules  */
+.tips-rules-for-nqueen {
+    font-family: "Roboto";
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:80vw;
+    border-style: solid;
+    border-color:white;
+    border-width:3px;
+    padding:20px;
+    margin:20px;
+    display: none;
+}
+#rules-container {
+    margin: 20px auto;
+    padding: 20px;
+
+    width: 80%;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    color:white;
+  }
+
+  #rules-container h2 {
+    text-align: center;
+  }
+
+  .rule {
+    margin-bottom: 15px;
+  }
+
+  .rule h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .rule p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  code {
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  /* Add to your CSS file or style tag */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+      background-color: red;
+  }
+  50% {
+      background-color: darkred;
+  }
+  100% {
+      background-color: red;
+  }
+}
+
+@keyframes flash {
+  0% {
+      background-color: lime;
+  }
+  50% {
+      background-color: white;
+  }
+  100% {
+      background-color: lime;
+  }
+}
+
+.filled-value {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.cell-clicked {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.cell-invalid {
+  animation: pulse 0.8s ease-out;
+}
+
+.grid-flash {
+  animation: flash 1s ease-in-out;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#resetButton {
+  background-color: #e63946;
+}
+
+#resetButton:hover {
+  background-color: #d62839;
+}
+
+#solveButton {
+  background-color: #2a9d8f;
+}
+
+#solveButton:hover {
+  background-color: #21867a;
+}
+
+#submitButton {
+  background-color: #457b9d;
+}
+
+#submitButton:hover {
+  background-color: #34668d;
+}
+/* Select Dropdown Styling */
+select {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #457b9d;
+  border-radius: 5px;
+  background-color: #f1f5f9;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #2a9d8f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+  border-color: #e63946;
+  box-shadow: 0 0 5px #e63946;
+}
+
+option {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body class="small-device">
+    <p id="smallDevicePara">It Supports Only Devices Having Width Greater Than 1024px</p>
+    <div class="button-container">
+        <select id="selectGrid">
+            <option value="4">4</option>
+        </select>
+
+        <button class = "tips-rules" id="tipsRulesBtn">
+            Tips/Rules
+        </button>
+        <button class="reset" id="resetPuzzle">
+            Reset
+        </button>
+        <button class = "submit-grid" id="submitPuzzle">
+            Submit
+        </button>
+        <button class = "show-answer" id="showAnswer">
+            Show Answer
+        </button>
+    </div>
+    <p style="text-align:center;color:green;font-size:27px;font-weight:bold;display:none" id="successMessage">Congratulations!You Won</p>
+    <p style="text-align:center;color:red;font-size:27px;font-weight:bold;display:none" id="errorMsg">Please Fill 1 Box From Each Row Blocks</p>
+    <div class = "check-box-container" id="checkBoxContainer">
+      <h1 style = "color:white;font-size:bold;text-align: center;">Queen's Quest</h1>
+
+    </div>
+    <div class = "tips-rules-for-nqueen" id="tipsRulesForNqueen">
+        <div id="rules-container">
+            <h2>N-Queens Problem Rules</h2>
+            <div class="rule">
+              <h3>No Two Queens in the Same Row:</h3>
+              <p>Only one queen is allowed per row. If a block in a row already has a queen, clicking on another block in the same row should remove the first queen.</p>
+            </div>
+            <div class="rule">
+              <h3>No Two Queens in the Same Column:</h3>
+              <p>If placing a queen in a column where another queen exists, it is invalid. Clicking on such a block should either toggle off the queen or display a warning.</p>
+            </div>
+            <div class="rule">
+              <h3>No Two Queens on the Same Diagonal:</h3>
+              <p>Diagonal constraints must be maintained. For major diagonal (<code>row - col</code>) and minor diagonal (<code>row + col</code>), ensure no queens conflict. Toggling a block that violates these constraints should either do nothing or notify the user.</p>
+            </div>
+            <div class="rule">
+              <h3>Interactive Toggle:</h3>
+              <p>Allow users to click on any block to place or remove a queen, provided no rules are violated.</p>
+            </div>
+          </div>
+
+
+    </div>
+
+    <div class = "check-box-container-answer1" id="checkBoxAnswer1">
+
+
+    </div>
+
+    <div class = "check-box-container-answer2" id="checkBoxAnswer2">
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
